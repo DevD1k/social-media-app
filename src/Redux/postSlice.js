@@ -41,8 +41,8 @@ export function fetchPosts() {
       const data = await res.json();
       dispatch(fetchSucess(data));
     } catch (err) {
-      dispatch(fetchFail(err));
-      console.log(err);
+      dispatch(fetchFail(err.message));
+      // console.log(err);
     }
   };
 }

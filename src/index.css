@@ -44,7 +44,30 @@ body {
 .nav .active {
   color: #f05a22;
 }
+.custom-link {
+  color: inherit;
+  text-decoration: none;
+}
 
+/* For Search Area */
+.search {
+  background-color: rgb(220, 219, 219);
+  padding: 1rem 2rem;
+}
+.search-items {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.search-items input {
+  outline: none;
+  border: none;
+  width: 95%;
+  height: 2rem;
+  margin-left: 0.25rem;
+}
 /* For Main Container */
 .home-container {
   display: flex;
@@ -113,6 +136,17 @@ span:hover {
 }
 .details:hover {
   background-color: #000;
+  color: #fff;
+}
+
+/* Loading Screen & Error Screen*/
+.loading,
+.error {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }
 

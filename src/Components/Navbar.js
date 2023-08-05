@@ -1,10 +1,13 @@
 import { FaHouseChimney, FaBell, FaBookmark, FaUser } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 export default function Navbar({ active }) {
   return (
     <div className="navbar">
       <div className="nav">
         <div className={`icons ${active === "home" ? "active" : ""}`}>
-          <FaHouseChimney />
+          <Link to="/" className="custom-link">
+            <FaHouseChimney />
+          </Link>
         </div>
         <div className="icons">
           <FaBell />
